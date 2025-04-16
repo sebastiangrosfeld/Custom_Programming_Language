@@ -1,0 +1,162 @@
+/* Matrix support */
+x = [
+    [1, 2, 3]
+    [4, 5, 6]
+    [7, 8, 9]
+];
+x[1][1] = 10;
+y = x[1][1];
+print y;
+
+/* Array support */
+a = [1, 2, 3];
+a[1] = 5;
+b = a[1];
+print b;
+
+/* Short-circuit boolean expression */
+i = true;
+j = false;
+k = true;
+v = j & i & k;
+print v;
+
+/* Arithmetics with casting and different precision */
+m = 5.4;
+n = 2.7;
+o = 1i;
+p = (m / n) + (double)o;
+print p;
+
+/* Negation */
+lk = false;
+lu = !lk;
+print lu;
+
+/* Equal */
+ee = "str";
+ff = "strf";
+gg = ee == ff;
+print gg;
+
+/* not Equal */
+de = 3.0;
+df = 2.0;
+dg = ee != ff;
+print gg;
+
+/* Less */
+le = 2;
+lf = 3;
+lg = le < lf;
+print lg;
+
+/* Greater */
+ge = 2.0;
+gf = 3.0;
+ggg = ge > gf;
+print ggg;
+
+/* String support */
+hello = "Hello, World!";
+print hello;
+read fromUser;
+print fromUser;
+
+/* Function support */
+fun int add(int a, int b) {
+    return a + b;
+}
+result = add(5i, 10i);
+print result;
+
+fun void sayhello() {
+    print hello;
+}
+sayhello();
+tt = true;
+mm = 2;
+/* While test */
+/* expeted
+2
+5
+5
+4
+4
+4 */
+while(tt) {
+    op = 1;
+    tt = op > mm;
+    print mm;
+    fgh = 7;
+    fdg = 5;
+    co = fgh > fdg;
+    while(co) {
+        print fdg;
+        fgh = fgh - 1;
+        co = fgh > fdg;
+    };
+};
+fguu = 7;
+fduu = 4;
+cb = fguu > fduu;
+    while(cb) {
+        print fduu;
+        fguu = fguu - 1;
+        cb = fguu > fduu;
+    };
+rt = 4;
+vb = 8;
+poi = vb < rt;
+if (poi) {
+    sayhello();
+};
+rty = 8;
+asd = true;
+if(asd) {
+    zxc = 8;
+    mnb = zxc == rty;
+    if (mnb) {
+        print rty;
+    };
+};
+bvc = 4;
+dxz = bvc == rty;
+if(dxz) {
+    sayhello();
+} else {
+    hgj = 5.6;
+    print hgj;
+};
+
+asx = !dxz;
+
+if(asx) {
+    sayhello();
+} else {
+    hgj = 2.3;
+    print hgj;
+};
+
+/* Classes support */
+class Particle {
+    double x;
+    double y;
+    double z;
+
+    fun void move(double dx, double dy, double dz) {
+        this.x = this.x + dx;
+        this.y = this.y + dy;
+        this.z = this.z + dz;
+    }
+}
+
+particle = new Particle;
+particle.x = 1.0;
+particle.y = 2.0;
+particle.z = 3.0;
+particleX = particle.x;
+print particleX;
+particle.move(0.0, 2.0, 0.0);
+particleY = particle.y;
+print particleY;
